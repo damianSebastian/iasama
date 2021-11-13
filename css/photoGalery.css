@@ -1,0 +1,40 @@
+.pg-container {
+  display: grid;
+  grid-gap: 30px;
+  justify-content: center;
+  background: url("../images/will_of_fire_site.svg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.pg-container img {
+  object-fit: cover;
+  width: 65vw;
+  border-radius: 10px;
+}
+.pg-container img:hover {
+  filter: drop-shadow(0 0 0.75rem rgb(255, 91, 27));
+  transform: scale(1.1);
+}
+@media screen and (min-width: 768px) {
+  .pg-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pg-container img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pg-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .pg-container img {
+    width: 100%;
+    border-radius: 50px;
+  }
+  .pg-container img:nth-child(3n) {
+    grid-column: 2/4;
+    grid-row: 1/3;
+  }
+}

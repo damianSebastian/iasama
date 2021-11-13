@@ -1,0 +1,58 @@
+.container {
+  background: url("../images/will_of_fire_site.svg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+#titlu {
+  text-transform: uppercase;
+  color: rgb(247, 215, 37);
+  font-size: 6vh;
+  margin: 0;
+  padding: 10px;
+}
+#logo {
+  height: 7vh;
+  margin: 0.5rem;
+}
+.statusBar {
+  background-color: rgb(24, 23, 23);
+  text-align: center;
+}
+.chose {
+  font-size: 1.5rem;
+  color: rgb(196, 196, 196);
+  margin: 0px;
+  padding: 3px;
+  padding-inline: 10px;
+}
+.post {
+  background-color: rgba(42, 42, 44, 0.4);
+
+  font-size: 1.5rem;
+  text-align: center;
+  width: 20vw;
+  height: 50vh;
+  align-items: center;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px;
+}
+p {
+  font-size: 2rem;
+  color: aliceblue;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .statusBar {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    height: 50px;
+  }
+}
